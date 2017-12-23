@@ -1,0 +1,26 @@
+
+This file supplements the paper "Nilsen, EB & Strand, O. (2017). Integrating data from several sources for increased 
+insight into demographic processes: Simulation studies and proof of concept for hierarchical change in ratio models. PlosOne"."
+
+Metadata for the data file "S4 Reindeer data". 
+
+Column names & meanings: 
+ 
+Year: Year the data was collected
+N: Number of rein deer seen during the "TOTAL" counts. 
+
+SU: Number of females and years seen during the "PRE" surveys
+J: Number of juveniles (i.e. calves) seen during the "PRE" surveys
+
+H0m: Number of malevcalves harvested during the harvest season. Part of "HARV" data
+H0f: Number of female calves harvested during the harvest season. Part of "HARV" data
+H1f: Number of female yearlings harvested during the harvest season. Part of "HARV" data
+H1m: Number of male yearlings harvested during the harvest season. Part of "HARV" data
+Hadf: Number of adult females (2 years or older) harvested during the harvest season. Part of "HARV" data
+Hadm: Number of adult males (2 years or older) harvested during the harvest season. Part of "HARV" data
+
+C0: Number of calves (both sexes) seen during the "POST" surveys. 
+Cf: Number of adult and yearling females seen during the "POST" surveys.
+Cm: Number of adult and yearling males seen during the "POST" surveys.
+
+For furhter description of the data collection procedures etc, we refer to the paper. 
