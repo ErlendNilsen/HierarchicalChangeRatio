@@ -8,4 +8,4 @@ S2 - Includes R-code to simulate population dynamocs and observation process
 S3 - Includes code to prepare data and run models
 S4 & S5: Data and metdata
 
-File "Sensitivy analysis" used to conduct sensitivity analysis (not included as appendix in original paper)
+File "Sensitivy analysis" used to conduct sensitivity analysis (not included as appendix in original paper). 
