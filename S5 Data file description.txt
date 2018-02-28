@@ -2,7 +2,7 @@
 This file supplements the paper "Nilsen, EB & Strand, O. (2017). Integrating data from several sources for increased 
 insight into demographic processes: Simulation studies and proof of concept for hierarchical change in ratio models. PlosOne"."
 
-Metadata for the data file "S4 Reindeer data". 
+Metadata for the data file "S4 ReindeerData". 
 
 Column names & meanings: 
  
