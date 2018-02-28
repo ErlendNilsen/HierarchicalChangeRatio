@@ -2,7 +2,7 @@
 ##########################################################
 ### This file supplements the paper "Nilsen, EB & Strand, O. (2017). Integrating data from several sources for increased 
 ### insight into demographic processes: Simulation studies and proof of concept for hierarchical change in ratio models. PlosOne".
-### The code is used to run the jags models (S1 Model code.R) using real data from two reindeer areas (Snøhetta & Kundshø) in Norway.  
+### The code is used to run the jags models (S1 Model code.R) using real data from two reindeer areas (Sn?hetta & Kundsh?) in Norway.  
 ############################################
 
 rm(list=ls())
@@ -17,10 +17,10 @@ Simulated_data <- SimPop(PHI3=0.95, mean_F=0.9, p1=0.5, p2=0.5, bias1=1)        
 
 
 #####################
-### READING AND PREPARING DATA FROM SNØHETTA AND
-### KNUTSHØ
+### READING AND PREPARING DATA FROM SN?HETTA AND
+### KNUTSH?
 
-d <- read.csv("data_reindeer.csv")
+d <- read.csv("data/S4 ReindeerData.csv")
 ds <- subset(d, Area=="Snohetta")
 dk <- subset(d, Area=="Knutsho")
 
@@ -29,7 +29,7 @@ dk <- subset(d, Area=="Knutsho")
 
 #########################
 # Bundle data
-# Snøhetta data; 
+# Sn?hetta data; 
 bugs.data.Sno <- list(SU = ds[1:23,3],
                       J = ds[1:23,4],
                       H0f = ds[1:23,6],
@@ -44,7 +44,7 @@ bugs.data.Sno <- list(SU = ds[1:23,3],
                       Cm=ds[1:23,13],
                       Cf=ds[1:23,12])
 
-# Knutshø data; 
+# Knutsh? data; 
 bugs.data.Knu <- list(SU = dk[1:23,3],
                       J = dk[1:23,4],
                       H0f = dk[1:23,6],
@@ -130,12 +130,12 @@ Knu_M2 <- jags(data=bugs.data.Knu[-10], inits=inits,
 ##### SUMMARY TABLE - DEMOGRAPHIC RATES
 ##### Numbers reported in results section of paper
 
-## Snøhetta; 
-Snøhetta <- rbind(round(f_s1,2),round(f_s2,2),round(phi1_s1,2),round(phi1_s2,2),round(phi3_s1,2),round(phi3_s2,2))
-rownames(Snøhetta) <- c("f_M1", "f_M2", "Sjuv_M1", "Sjuv_M1", "Phi3_M1", "Phi3_M2")
+## Sn?hetta; 
+Sn?hetta <- rbind(round(f_s1,2),round(f_s2,2),round(phi1_s1,2),round(phi1_s2,2),round(phi3_s1,2),round(phi3_s2,2))
+rownames(Sn?hetta) <- c("f_M1", "f_M2", "Sjuv_M1", "Sjuv_M1", "Phi3_M1", "Phi3_M2")
 
-# Knutshø 
-Knutshø <- rbind(round(f_k1,2),round(f_k2,2),round(phi1_k1,2),round(phi1_k2,2),round(phi3_k1,2),round(phi3_k2,2))
-rownames(Knutshø) <- c("f_M1", "f_M2", "Sjuv_M1", "Sjuv_M1", "Phi3_M1", "Phi3_M2")
+# Knutsh? 
+Knutsh? <- rbind(round(f_k1,2),round(f_k2,2),round(phi1_k1,2),round(phi1_k2,2),round(phi3_k1,2),round(phi3_k2,2))
+rownames(Knutsh?) <- c("f_M1", "f_M2", "Sjuv_M1", "Sjuv_M1", "Phi3_M1", "Phi3_M2")
  
 
