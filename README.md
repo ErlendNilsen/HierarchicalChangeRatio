@@ -1,6 +1,6 @@
 # HierChangeRatio
 
-These code chunks are used to performe the analysis presented in the paper "Nilsen, E.B. & Strand, O. (2018) *Integrating data from multiple sources for insights into demographic processes: Simulation studies and proof of concept for hierarchical change-in-ratio models* PlosOne". 
+These code chunks are used to performe the analysis presented in the paper "Nilsen, E.B. & Strand, O. (2018) *Integrating data from multiple sources for insights into demographic processes: Simulation studies and proof of concept for hierarchical change-in-ratio models* [In revision for PlosOne]". 
 
 - S1 - Includes jags-code to construct models
 - S2 - Includes R-code to simulate population dynamocs and observation process
