@@ -1,4 +1,4 @@
-# HierChangeRatio
+## Hierarchical change-in-ratio models
 
 These code chunks are used to performe the analysis presented in the paper "Nilsen, E.B. & Strand, O. (2018) *Integrating data from multiple sources for insights into demographic processes: Simulation studies and proof of concept for hierarchical change-in-ratio models* [In revision for PlosOne]". 
 
