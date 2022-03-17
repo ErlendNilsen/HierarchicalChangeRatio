@@ -115,15 +115,17 @@ cat("
     # OBSERVATION PROCESS: STRUCTURE SURVEY DATA
     ############################################################
     
-    for (t in 1:(T-1)){
+    for (t in 2:T){
     
-    J[t] ~ dbin(p1[t], round((N0f[t]+N0m[t])/phi1[t]))
+    J[t] ~ dbin(p1[t], round((N0f[t]+N0m[t])/phi1[t-1]))
     SU[t] ~ dbin(p1[t], round(N1m[t]+N1f[t]+Nadf[t]))
+                    }
     
+    for (t in 1:(T-1)){
     C0[t] ~ dbin(p2[t], round(N0f[t]+N0m[t]-H0f[t]-H0m[t])) 
     Cf[t] ~ dbin(p2[t], round(N1f[t]+Nadf[t]-H1f[t]-Hadf[t]))
     Cm[t] ~ dbin(p2[t], round(N1m[t]+Nadm[t]-H1m[t]-Hadm[t]))
-    }
+                    }
     
     
     ############################################################
@@ -228,15 +230,17 @@ cat("
     # OBSERVATION PROCESS: STRUCTURE SURVEY DATA
     ############################################################
     
-    for (t in 1:(T-1)){
+    for (t in 2:T){
     
-    J[t] ~ dbin(p1[t], round((N0f[t]+N0m[t])/phi1[t]))
+    J[t] ~ dbin(p1[t], round((N0f[t]+N0m[t])/phi1[t-1]))
     SU[t] ~ dbin(p1[t], round(N1m[t]+N1f[t]+Nadf[t]))
+                    }
     
+    for (t in 1:(T-1)){
     C0[t] ~ dbin(p2[t], round(N0f[t]+N0m[t]-H0f[t]-H0m[t])) 
     Cf[t] ~ dbin(p2[t], round(N1f[t]+Nadf[t]-H1f[t]-Hadf[t]))
     Cm[t] ~ dbin(p2[t], round(N1m[t]+Nadm[t]-H1m[t]-Hadm[t]))
-    }
+                    }
     
     
     ############################################################
